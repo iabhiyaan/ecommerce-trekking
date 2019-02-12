@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.315)), url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 35px 0;
+    /* border: 1px solid white; */
+}
+
+.container {
+    width: 1152px;
+    margin: auto;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    /* border: 1px solid green; */
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container .logo {
+    float: left;
+}
+
+nav {
+    float: right;
+    /* border: 1px solid blue; */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    font-size: 18px;
+    padding: 0 16px;
+    /* border: 1px solid red; */
+}
+
+nav ul li:last-child {
+    line-height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.slogan {
+    padding-top: 231px;
+    color: white;
+    text-align: center;
+    /* border: 1px solid yellow; */
+}
+
+.slogan h2 {
+    font-size: 4rem;
+}
+
+.slogan p{
+    line-height: 1.7;
+}
+
+.arrow {
+    padding-top: 100px;
+    /* border: 1px solid red; */
+}
+
+#filter {
+    height: 143px;
+    background: #f5f6f7;
+    /* border: 1px solid green; */
+}
+
+.checkbox {
+    line-height: 143px;
+    padding: 0 15px;
+    /* border: 1px solid green; */
+}
+
+.col-left {
+    float: left;
+}
+
+.col-right {
+    float: right;
+    line-height: 143px;
+}
+
+.col-right button{
+    background: #aa9b77;
+    width: 204px;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #aa9b77;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 hsla(42, 23%, 57%, 0.322), 0 6px 20px 0 hsla(42, 23%, 57%, 0.322);
+}
+
+#products {
+    height: 1400px;
+    margin-top: 10px;
+}
+
+.container {
+    /* border: 1px solid green; */
+}
+
+.hr {
+    padding: 80px 0;
+    /* border: 1px solid blue; */
+}
+
+.hr h2 {
+    position: relative;
+}
+
+.hr h2::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 84px;
+    width: 92.5%;
+    height: 2px;
+    background: #ccc;
+}
+
+.navigation h3 {
+    color: #aa9b77;
+    font-size: 16px;
+    text-align: right;
+}
+
+.navigation h3::before {
+    content: '<';
+    color: #aa9b77;
+    position: relative;
+    top: 16px;
+    left: 10px;
+}
+
+.navigation h3::after {
+    content: '>';
+    color: #aa9b77;
+    position: relative;
+    top: 16px;
+    left: -10px;
+}
+
+.all--products {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 5px solid red; */
+}
+
+.column {
+    width: 320px;
+    height: 378px;
+    background: #f5f6f7;
+    /* border: 1px solid black; */
+}
+
+.border-dark {
+    border: 6px solid #aa9b77;
+    padding: 0 25px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.size {
+    width: 30%;
+    padding-top: 16px;
+    float: left;
+    /* border: 1px solid black; */
+}
+
+.size h2 {
+    font-size: 1rem;
+    color: #424242;
+}
+
+.size h2 .white {
+    color: black;
+}
+
+.small-circles {
+    padding-top: 15px;
+    width: 70%;
+    text-align: right;
+    float: right;
+    /* border: 1px solid green; */
+}
+
+.t-shirt {
+    width: 146px;
+    height: 189px;
+    line-height: 420px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.t-shirt img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.baseline--title {
+    color: #aa9b77;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.baseline--price {
+    color: #424242;
+    font-size: 22px;
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+}
+
+.col-2 {
+    position: relative;
+}
+
+.size--title {
+    position: absolute;
+    top: 23px;
+    left: 26px;
+    color: #424242;
+    font-size: 1rem;
+}
+
+.trouser {
+    position: absolute;
+    width: 116px;
+    height: 232px;
+    left: 50%;
+    top: 73px;
+    bottom: 73px;
+    transform: translateX(-50%);
+}
+
+.trouser img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.baseline--title--trouser {
+    color: #aa9b77;
+    font-size: 18px;
+    position: absolute;
+    bottom: 16px;
+    left: 26px;
+}
+
+.baseline--trouser--price {
+    color: #424242;
+    font-size: 22px;
+    position: absolute;
+    bottom: 16px;
+    right: 25px;
+}
+
+.bag {
+    position: absolute;
+    width: 143px;
+    height: 211px;
+    left: 50%;
+    top: 83.5px;
+    bottom: 83.5px;
+    transform: translateX(-50%);
+}
+
+.bag img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.baseline--title--bag {
+    color: #aa9b77;
+    font-size: 18px;
+    position: absolute;
+    bottom: 16px;
+    text-transform: uppercase;
+    left: 26px;
+}
+
+.baseline--bag--price {
+    color: #424242;
+    font-size: 22px;
+    position: absolute;
+    bottom: 16px;
+    right: 25px;
+}
+
+.second-hr {
+    padding: 88px 0;
+    /* border: 1px solid blue; */
+}
+
+.second-hr h2 {
+    position: relative;
+    
+}
+
+.second-hr h2::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 90.5%;
+    height: 2px;
+    background: #ccc;
+}
+
+.second-hr h2::after {
+    content: 'WOMEN';
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.second-navigation h3 {
+    color: #aa9b77;
+    font-size: 16px;
+}
+
+.second-navigation h3::before {
+    content: '<';
+    color: #aa9b77;
+    position: relative;
+    top: 16px;
+    left: 10px;
+}
+
+.second-navigation h3::after {
+    content: '>';
+    color: #aa9b77;
+    position: relative;
+    top: 16px;
+    left: -10px;
+}
+
+#about {
+    width: 100vw;
+    min-height: 403px;
+    background: #aa9b77;
+}
+
+#about .container {
+    padding-top: 120px;
+    /* border: 1px solid red; */
+}
+
+.frame {
+    width: 712px;
+    height: 252px;
+    margin: auto;
+    color: #837659;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid #837659;
+}
+
+.frame p{
+    position: relative;
+    left: 50%;
+    bottom: 22.5px;
+    transform: translateX(-50%);
+    width: 25%;
+    background: #aa9b77;
+    z-index: 1;
+    /* border: 1px solid green; */
+}
+
+.frame p:nth-of-type(2) {
+    text-align: center;
+    width: 100%;
+    color: #424242;
+    font-weight: bold;
+    font-size:14px;
+    height: 200px;
+    line-height: 2;
+    padding-top: 50px;
+    z-index: 0;
+    /* border: 2px solid red; */
+}
+
+#review {
+    width: 100vw;
+    background: #535253;
+}
+
+#review .container {
+    height: 75px;
+    line-height: 75px;
+    /* border: 1px solid white; */
+}
+
+.info {
+    height: 75px;
+    line-height: 75px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.info img {
+   /* position: absolute;
+   top: 25px; */
+   vertical-align: middle;
+   /* border: 1px solid white; */
+}
+
+.info q {
+    padding: 0 60px;
+    color: white;
+}
+
+#footer {
+    width: 100vw;
+    min-height: 352px;
+    background: #424242;
+}
+
+.footer--title h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: white;
+    padding-top: 70px;
+}
+
+.footer-left {
+    float: left;
+    width: 40%;
+    /* border: 1px solid white; */
+}
+
+.footer-left p{
+    text-align: justify;
+    line-height: 2;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-right {
+    float: right;
+    line-height: 1.9;
+    padding-top: 137px;
+    padding-right: 15px;
+    text-align: right;
+    width: 60%;
+    color: white;
+    /* border: 1px solid white; */
+}
